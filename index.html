@@ -71,7 +71,7 @@
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#home">Главная</a></li>
-						<!--<li><a href="#services">Услуги</a></li>-->
+						<li><a href="#services">Обо мне</a></li>
                         <li><a href="#portfolio">Мои работы</a></li>
                         <li><a href="#skills">Навыки</a></li>
 						<li><a href="#contact">Контакты</a></li>
@@ -83,7 +83,36 @@
 		</nav>
 
 	</header>
+	<!-- Navigation end -->
 
+    <!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Обо мне</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							В 2011 году закончил Южно-Уральский Государственный университет по специальности технология машиностроения, 
+							9 лет проработал на металлургическом заводе в должности ведущего инженера, 
+							в 2021 получил второй диплом по специальности программная инженерия,
+							параллельно с учебой, проходил различные образовательные курсы по программированию. 
+							<br>Хочу развиваться в новом для меня направлении и достичь больших высот.
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
   
 	<!-- Portfolio start -->
 
@@ -322,7 +351,7 @@
 
 				<div class="col-sm-6 col-sm-offset-3">
 
-					<form id="contact-form" role="form">
+					<form id="contact-form" role="form" action="/assets/php/contact.php" metod="post">
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
 								<label class="sr-only" for="c_name">name</label>
@@ -335,14 +364,13 @@
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="message"></textarea>
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Текст сообщения"></textarea>
 							</div>
 
 							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Отправить сообщение</button>
 						</div>
 						<div class="ajax-response"></div>
 					</form>
-
 				</div>
 
 			</div><!-- .row -->
